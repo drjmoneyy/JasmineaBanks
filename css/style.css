@@ -181,26 +181,18 @@ main {
 /* ---------- Home / hero ---------- */
 .hero {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 2.5rem;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
   align-items: start;
   margin-bottom: 3rem;
 }
 
-.hero__photo a {
-  display: block;
-  text-decoration: none;
-}
-
 .hero__photo img {
-  width: 280px;
-  height: auto;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
   border: 1px solid var(--color-line);
-}
-
-.hero__photo a:hover img,
-.hero__photo a:focus img {
-  border-color: var(--color-accent-strong);
+  filter: grayscale(100%);
 }
 
 .hero__name {
@@ -227,8 +219,8 @@ main {
     grid-template-columns: 1fr;
   }
   .hero__photo img {
-    width: 200px;
-    height: auto;
+    width: 120px;
+    height: 120px;
   }
 }
 
