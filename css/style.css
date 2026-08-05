@@ -1,5 +1,6 @@
 /* ==========================================================================
    Jasmine Banks — personal academic site
+   Minimalist, monospace, black-on-off-white with a single accent color.
    ========================================================================== */
 
 :root {
@@ -186,10 +187,20 @@ main {
   margin-bottom: 3rem;
 }
 
+.hero__photo a {
+  display: block;
+  text-decoration: none;
+}
+
 .hero__photo img {
   width: 280px;
   height: auto;
   border: 1px solid var(--color-line);
+}
+
+.hero__photo a:hover img,
+.hero__photo a:focus img {
+  border-color: var(--color-accent-strong);
 }
 
 .hero__name {
