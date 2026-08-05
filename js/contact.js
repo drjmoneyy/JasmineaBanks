@@ -3,6 +3,15 @@
 // Submits to Formspree (https://formspree.io), a free static-site form
 // backend. This works on any static host (GitHub Pages, Cloudflare Pages,
 // Netlify, etc.) with no server of your own required.
+//
+// SETUP REQUIRED before this form will work on a new host:
+// 1. Create a free account at https://formspree.io
+// 2. Create a new form and copy its endpoint, e.g.
+//    https://formspree.io/f/abcdwxyz
+// 3. Paste that URL into the "action" attribute of the <form> in
+//    contact.html, replacing YOUR_FORM_ID.
+// 4. Formspree will ask you to confirm your email address the first time
+//    a message is submitted. Confirm it, or messages will not be delivered.
 
 (function () {
   var form = document.getElementById('contact-form');
